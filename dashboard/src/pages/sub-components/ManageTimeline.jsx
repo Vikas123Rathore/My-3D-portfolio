@@ -18,7 +18,7 @@ const ManageTimeline = () => {
     try {
       // 👇 IMPORTANT CHANGE: Yahan Render wala URL aayega
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/timeline/getall",
+        "https://my-3d-portfolio-w2c6.onrender.com/api/v1/timeline/getall",
         { withCredentials: true }
       );
       setTimelines(data.timelines);
