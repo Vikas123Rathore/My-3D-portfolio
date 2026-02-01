@@ -20,11 +20,13 @@ dotenv.config({ path: "./.env" });
 app.use(
   cors({
     origin: [
-      "https://my-3d-portfolio-1-dashboard.onrender.com", // Dashboard
-      "https://my-3d-portfolio-1-frontend.onrender.com"  // Portfolio
+      "https://my-3d-portfolio-1-dashboard.onrender.com",
+      "https://my-3d-portfolio-1-frontend.onrender.com",
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
+    optionsSuccessStatus: 200,
   })
 );
 app.options("*", cors());
