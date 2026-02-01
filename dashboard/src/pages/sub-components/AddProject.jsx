@@ -41,7 +41,7 @@ const AddProject = () => {
     try {
       // 👇 YE WALI LINE CORRECT KI HAI Maine
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/project/add", 
+        "https://my-3d-portfolio-w2c6.onrender.com/api/v1/project/add", 
         formData,
         {
           withCredentials: true,
