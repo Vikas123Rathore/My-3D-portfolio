@@ -94,7 +94,7 @@ export const logout = catchAsyncErrors(async (req, res, next) => {
 
 // 4. GET USER
 export const getUser = catchAsyncErrors(async (req, res, next) => {
-  const user = await User.findOne({ email: "indrajeetmrj2022@gmail.com" });
+  const user = await User.findOne({ email: "vikasrathore160@gmail.com" });
   res.status(200).json({
     success: true,
     user,
@@ -115,7 +115,7 @@ export const updateProfile = catchAsyncErrors(async (req, res, next) => {
     twitterURL: req.body.twitterURL,
   };
 
-  const user = await User.findOne({ email: "indrajeetmrj2022@gmail.com" });
+  const user = await User.findOne({ email: "vikasrathore160gmail.com" });
 
   // Avatar Update Logic
   if (req.files && req.files.avatar) {
