@@ -46,7 +46,7 @@ const ManageTimeline = () => {
   const handleUpdate = async (id) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/timeline/update/${id}`,
+        `https://my-3d-portfolio-w2c6.onrender.com/api/v1/timeline/update/${id}`,
         { title, description, from, to },
         { headers: { "Content-Type": "application/json" }, withCredentials: true }
       );
@@ -62,7 +62,7 @@ const ManageTimeline = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/timeline/delete/${id}`,
+        `https://my-3d-portfolio-w2c6.onrender.com/api/v1/timeline/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);
