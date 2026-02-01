@@ -17,10 +17,10 @@ const Dashboard = () => {
 
         // 4 alag-alag calls taaki ek fail ho to baaki chalte rahein
         const [projRes, skillRes, msgRes, timeRes] = await Promise.all([
-          axios.get("http://localhost:4000/api/v1/project/getall"),
-          axios.get("http://localhost:4000/api/v1/softwareapplication/getall"),
-          axios.get("http://localhost:4000/api/v1/message/getall"),
-          axios.get("http://localhost:4000/api/v1/timeline/getall"),
+          axios.get("https://my-3d-portfolio-w2c6.onrender.com/api/v1/project/getall"),
+          axios.get("https://my-3d-portfolio-w2c6.onrender.com/api/v1/softwareapplication/getall"),
+          axios.get("https://my-3d-portfolio-w2c6.onrender.comapi/v1/message/getall"),
+          axios.get("https://my-3d-portfolio-w2c6.onrender.comapi/v1/timeline/getall"),
         ]);
 
         // ✅ CORRECT LOGIC: Pehle check karo array exist karta hai ya nahi
