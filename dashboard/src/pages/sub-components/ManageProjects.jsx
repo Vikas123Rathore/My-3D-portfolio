@@ -21,7 +21,7 @@ const ManageProjects = () => {
   const fetchProjects = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/project/getall",
+        "https://my-3d-portfolio-w2c6.onrender.comapi/v1/project/getall",
         { withCredentials: true }
       );
       setProjects(data.projects);
