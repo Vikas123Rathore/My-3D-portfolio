@@ -20,7 +20,7 @@ const Account = () => {
 
     try {
       const { data } = await axios.put(
-        "http://localhost:4000/api/v1/user/update/me",
+        "https://my-3d-portfolio-w2c6.onrender.com/api/v1/user/update/me",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
