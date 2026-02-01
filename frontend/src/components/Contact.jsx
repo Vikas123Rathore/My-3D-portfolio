@@ -15,7 +15,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "https://my-3d-portfolio-w2c6.onrender.com",
+        "https://my-3d-portfolio-w2c6.onrender.com/api/v1/message/send",
         { senderName: name, subject, message },
         { headers: { "Content-Type": "application/json" } }
       );
