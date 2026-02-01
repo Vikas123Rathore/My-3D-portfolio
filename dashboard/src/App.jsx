@@ -13,7 +13,7 @@ const App = () => {
     // Local check for admin
     const isAdmin = localStorage.getItem("isAdmin");
     if (isAdmin === "true") {
-      setUser({ fullName: "Indrajeet Kumar", role: "Admin" });
+      setUser({ fullName: "Vikas Rathore", role: "Admin" });
       setIsAuthenticated(true);
     }
     // Loading stop karo

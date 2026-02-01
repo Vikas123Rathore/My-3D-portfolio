@@ -33,7 +33,7 @@ const Navbar = () => {
                   to={item.to}
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-300 hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)] transition-all text-sm font-medium"
+                  className="cursor-pointer text-gray-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)] transition-all text-lg  font-semibold"
                 >
                   {item.text}
                 </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 onClick={() => setIsOpen(false)}
-                className="cursor-pointer text-gray-300 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                className="cursor-pointer text-gray-300 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semiboald transition-all"
               >
                 {item.text}
               </Link>
