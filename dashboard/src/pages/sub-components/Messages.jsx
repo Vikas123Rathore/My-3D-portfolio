@@ -26,7 +26,7 @@ const Messages = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/message/delete/${id}`,
+        `https://my-3d-portfolio-w2c6.onrender.com/api/v1/message/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);
