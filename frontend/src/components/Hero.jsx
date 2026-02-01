@@ -12,7 +12,7 @@ const Hero = () => {
     const fetchUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/portfolio/me"
+          "https://my-3d-portfolio-w2c6.onrender.com"
         );
         setUser(data.user);
       } catch (error) {
