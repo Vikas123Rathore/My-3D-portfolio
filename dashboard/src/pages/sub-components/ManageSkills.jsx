@@ -37,7 +37,7 @@ const ManageSkills = () => {
 
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/softwareapplication/update/${id}`,
+        `https://my-3d-portfolio-w2c6.onrender.comapi/v1/softwareapplication/update/${id}`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" }, withCredentials: true }
       );
@@ -55,7 +55,7 @@ const ManageSkills = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/softwareapplication/delete/${id}`,
+        `https://my-3d-portfolio-w2c6.onrender.com/api/v1/softwareapplication/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);
