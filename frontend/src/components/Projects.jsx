@@ -10,7 +10,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         const { data } = await axios.get(
-          "https://my-3d-portfolio-w2c6.onrender.com",
+          "https://my-3d-portfolio-w2c6.onrender.com/api/v1/project/getall",
           { withCredentials: true }
         );
         setProjects(data.projects);
