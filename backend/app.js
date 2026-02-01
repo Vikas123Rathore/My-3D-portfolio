@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: [
       "https://my-3d-portfolio-1-dashboard.onrender.com", // Dashboard
-      "http://localhost:5174"  // Portfolio
+      "my-3d-portfoliofrontend.netlify.app"  // Portfolio
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
