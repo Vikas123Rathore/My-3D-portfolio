@@ -28,7 +28,7 @@ const AddSkill = () => {
     try {
       // Backend Security hata di hai, isliye credentials ki zaroorat nahi
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/softwareapplication/add",
+        "https://my-3d-portfolio-w2c6.onrender.comapi/v1/softwareapplication/add",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
