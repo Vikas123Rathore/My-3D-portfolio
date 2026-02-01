@@ -29,7 +29,7 @@ const Register = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://my-3d-portfolio-w2c6.onrender.com/api/v1/user/register",
         formData,
         {
           withCredentials: true,
